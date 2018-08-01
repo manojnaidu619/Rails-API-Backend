@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This Rails API is acting as backend to [this frontend Ember application](https://github.com/manojnaidu619/Ember-Client).
 
-Things you may want to cover:
+Things you may want to ensure:
 
-* Ruby version
+* Use ``active_model_serializers`` gem to Format into JSON API
 
-* System dependencies
+* run ``bundle install``
 
-* Configuration
+* run ``rails g serializer SERIALIZER_NAME``
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Edit the serializer file to permit the attributes.
