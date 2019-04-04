@@ -12,6 +12,15 @@ class BanksController < ApplicationController
      end
   end
 
+  def update
+    @bank = Bank.find(params[:id])
+     if @bank.update(bank_params)
+       render json: {status: "SUCCESS", message: "Updated Data", data: @bank}
+     else
+       render json: @bank.errors, status: 422
+     end
+  end
+
   private
 
   def bank_params
